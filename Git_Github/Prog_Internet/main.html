@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nome-aluno">
+        <h1>Letícia Mariotti</h1>
+    </div>  
+    <main>
+        <section class="login">
+            <div class="imagem">
+                    <img class="butterfly" src="https://a-static.mlcdn.com.br/450x450/barbie-butterfly-uma-nova-aventura-em-fairytopia-dvd-original-lacrado-universal/klaivideo/3117p/50afc1f1d680a73f4d9ba96c944f8118.jpeg" alt="">
+            </div>
+            <div class="formulario">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="seu nome" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <label for="itelefone">Fone</label>
+                        <input type="text" name="telefone" id="itelefone" placeholder="seu telefone" required minlength="8" maxlength="20">
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <img class="fairytopia" src="https://br.web.img3.acsta.net/r_1280_720/pictures/21/11/03/17/12/2415548.jpg" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="icons">
+                <div class="facebook">
+                    <i data-feather="facebook"></i>
+                </div>
+                <div class="twitter">
+                    <i data-feather="twitter"></i>
+                </div>
+                <div class="instagram">
+                    <i data-feather="instagram"></i>
+                </div>
+            </div>
+            <p>&copy; IFPR Campus Cascavel</p>
+        </footer>
+    </main>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

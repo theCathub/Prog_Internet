@@ -1,0 +1,14 @@
+div {
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social a {
+    height: 3rem;
+    width: 3rem;
+    background-color: #508D4E;
+    border-radius: 100%;
+    line-height: 3rem;
+    color: #D6EFD8;
+}
