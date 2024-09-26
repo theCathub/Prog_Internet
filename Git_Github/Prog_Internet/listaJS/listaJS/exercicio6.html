@@ -1,5 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaJS</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 6</h1>
+        <form>
+            Quilos:<input type="text" id="inQuilos">
+            <input type="submit" value="Submeter">
+        </form>
+        <h3></h3>
+    </header>
+</body>
+</html>
 <script>
-    let quilos = Number(prompt("Peso em quilos: "));
-    let preco = quilos*12;
-    alert("Preço: "+preco);
+    let frm = document.querySelector("form");
+    let saida = document.querySelector("h3");
+    frm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        let quilos = frm.inQuilos.value;
+        let preco = quilos*12;
+        saida.innerText = "Preço: "+preco;
+    })
 </script>

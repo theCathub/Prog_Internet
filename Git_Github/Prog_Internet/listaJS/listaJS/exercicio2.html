@@ -1,5 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaJS</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 2</h1>
+        <form>
+            Número de cavalos:<input type="text" id="inCavalos">
+            <input type="submit" value="Submeter">
+        </form>
+        <h3></h3>
+    </header>
+</body>
+</html>
 <script>
-    let numCavalos = Number(prompt("Número de cavalos: "));
-    let ferraduras = numCavalos*4;
-    alert("Ferraduras: " + ferraduras)
+    let frm = document.querySelector("form");
+    let saida = document.querySelector("h3");
+    frm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        let numCavalos = frm.inCavalos.value;
+        let ferraduras = numCavalos*4;
+        saida.innerText = "Ferraduras: "+ferraduras;
+    })
 </script>

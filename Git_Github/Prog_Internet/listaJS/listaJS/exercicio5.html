@@ -1,6 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaJS</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 5</h1>
+    </header>
+    <form>
+        Pagamento:<input type="text" id="inPagamento">
+        Preço:<input type="text" id="inPreco">
+        <br>
+        <input type="submit" value="Submeter">
+    </form>
+    <h3></h3>
+</body>
+</html>
 <script>
-    let pagamento = Number(prompt("Valor do pagamento: "));
-    let preco = Number(prompt("Preço da gasolina por litro: "));
-    let litros = pagamento/preco
-    alert("Litros: "+litros)
+    let frm = document.querySelector("form");
+    let saida = document.querySelector("h3");
+    frm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        let pagamento = frm.inPagamento.value;
+        let preco = frm.inPreco.value;
+        let litros = pagamento/preco;
+        saida.innerText = "Quantidade de litros: "+litros;
+    })
 </script>

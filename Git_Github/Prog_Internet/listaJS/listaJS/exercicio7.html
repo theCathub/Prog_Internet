@@ -1,10 +1,6 @@
 <script>
     let dia = Number(prompt("Dia: "));
     let mes = Number(prompt("Mês: "));
-    let total = 0;
-    for(let i = 1; i < mes; i++){
-        total+=30;
-    }
-    total+=dia;
+    let total = (mes-1)*30+dia;
     alert("Total de dias: "+total);
 </script>

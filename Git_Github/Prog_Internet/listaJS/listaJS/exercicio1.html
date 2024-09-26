@@ -1,8 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListaJS</title>
+</head>
+<body>
+    <header>
+        <h1>Exercício 1</h1>
+    </header>
+    <form>
+        Altura:<input type="text" id="inAltura">
+        Largura:<input type="text" id="inLargura">
+        <br>
+        <input type="submit" value="Submeter">
+    </form>
+    <h3></h3>
+</body>
+</html>                                                                             
 <script>
-    let altura = Number(prompt("Altura: "));
-    let largura = Number(prompt("Largura: "));
-
-    let area = altura*largura;
-    alert("Área: "+area);
-    
+    let frm = document.querySelector('form');
+    let saida = document.querySelector('h3');
+    frm.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        let altura = frm.inAltura.value;
+        let largura = frm.inLargura.value;
+        let area = altura*largura;
+        saida.innerText = "Área: "+area;
+    })
 </script>
