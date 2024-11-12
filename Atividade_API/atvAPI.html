@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar CEP</title>
-    <link rel="stylesheet" href="atvAPI.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar CEP</title>
+  <link rel="stylesheet" href="atvAPI.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <main>
     <h1>Buscar CEP</h1>
-    <form class="form-horizontal">
-        <fieldset>
-
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="inCidade">Cidade</label>  
-          <div class="col-md-4">
-          <input id="inCidade" name="inCidade" type="text" placeholder="cidade" class="form-control input-md">
-            
-          </div>
+    <form>
+      <div class="form-group row">
+        <label for="inEstado" class="col-4 col-form-label">Estado</label> 
+        <div class="col-8">
+          <input id="inEstado" name="inEstado" placeholder="estado" type="text" class="form-control">
         </div>
-
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="inBairro">Bairro</label>  
-          <div class="col-md-4">
-          <input id="inBairro" name="inBairro" type="text" placeholder="bairro" class="form-control input-md">
-            
-          </div>
+      </div>
+      <div class="form-group row">
+        <label for="inCidade" class="col-4 col-form-label">Cidade</label> 
+        <div class="col-8">
+          <input id="inCidade" name="inCidade" placeholder="cidade" type="text" class="form-control">
         </div>
-
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="inRua">Rua</label>  
-          <div class="col-md-4">
-          <input id="inRua" name="inRua" type="text" placeholder="rua" class="form-control input-md">
-            
-          </div>
+      </div>
+      <div class="form-group row">
+        <label for="idBairro" class="col-4 col-form-label">Bairro</label> 
+        <div class="col-8">
+          <input id="idBairro" name="idBairro" placeholder="bairro" type="text" class="form-control">
         </div>
-
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="btBuscar"></label>
-          <div class="col-md-4">
-            <button id="btBuscar" name="btBuscar" class="btn btn-primary">Buscar</button>
-          </div>
+      </div>
+      <div class="form-group row">
+        <label for="idRua" class="col-4 col-form-label">Rua</label> 
+        <div class="col-8">
+          <input id="idRua" name="idRua" placeholder="rua" type="text" class="form-control">
         </div>
-
-        <div>
-            <p></p>
+      </div> 
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Buscar</button>
         </div>
-        
-        </fieldset>
-        </form>
-        
+      </div>
+    </form>
+</main>
 </body>
-    <script src="atvAPI.js"></script>
 </html>
