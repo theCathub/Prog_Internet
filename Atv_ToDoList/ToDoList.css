@@ -4,14 +4,11 @@
 }
 
 body {
-    background-color: #C2FFC7;
+    background-color: #FD94B4;
 }
 
-h1 {
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    padding: 20px;
+nav {
+    display: inline;
 }
 
 div {
@@ -22,10 +19,61 @@ div {
 }
 
 footer {
-    background-color: #62825D;
+    background-color: #F12B6B;
     bottom: 0;
     position: fixed;
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+
+.btnAdd {
+    height: 30px;
+    width: 90px;
+    background-color: #FEC7B4;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.inAtv {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inPrioridade {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    height: 150px;
+    border-radius: 20px;
+}
+
+h1 {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 20px;
+}
+
+.btnCancelar {
+    background-color: #E72929;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.btnConfirmar {
+    background-color: #8FD14F;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 5px;
 }
