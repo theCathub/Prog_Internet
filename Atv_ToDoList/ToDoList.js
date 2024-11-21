@@ -19,8 +19,6 @@ frm.addEventListener('submit', (e) =>{
     let prioridade = frm.inPrioridade.value;
     let ul = document.getElementById('ulLista');
 
-   
-
     if (atividade == '' && prioridade == '') {
         alert("Insira uma atividade e uma prioridade válida.")
     }else{
@@ -60,7 +58,8 @@ frm.addEventListener('submit', (e) =>{
             e.preventDefault();
             confirmarAtv(li);
         })
-        atividade.value = '';
-        prioridade.value = '';
+        
     }
+    frm.inAtv.value = '';
+    frm.inPrioridade.value = '';
 })
