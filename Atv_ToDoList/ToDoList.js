@@ -22,7 +22,7 @@ frm.addEventListener('submit', (e) =>{
    
 
     if (atividade == '' && prioridade == '') {
-        
+        alert("Insira uma atividade e uma prioridade válida.")
     }else{
         let li = document.createElement('li');
         li.textContent = atividade;
@@ -60,6 +60,7 @@ frm.addEventListener('submit', (e) =>{
             e.preventDefault();
             confirmarAtv(li);
         })
+        atividade.value = '';
+        prioridade.value = '';
     }
-
 })
