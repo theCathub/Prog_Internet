@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #FD94B4;
+    background-color: #FFCFEF;
 }
 
 nav {
@@ -19,7 +19,7 @@ div {
 }
 
 footer {
-    background-color: #F12B6B;
+    background-color: #F875AA;
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -30,7 +30,7 @@ footer {
 .btnAdd {
     height: 30px;
     width: 90px;
-    background-color: #FEC7B4;
+    background-color: #F875AA;
     border: none;
     border-radius: 20px;
     padding: 5px 10px;

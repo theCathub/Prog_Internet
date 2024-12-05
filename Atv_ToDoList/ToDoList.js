@@ -27,14 +27,14 @@ frm.addEventListener('submit', (e) =>{
         ul.appendChild(li);
 
         if (prioridade.toLowerCase() == "alta") {
-            li.style.color = 'red';
+            li.style.backgroundColor = '#F95454';
 
         }
         else if (prioridade.toLowerCase() == 'media') {
-            li.style.color = 'yellow';
+            li.style.backgroundColor = '#FCF596';
         }
         else if (prioridade.toLowerCase() == 'baixa') {
-            li.style.color = 'blue';
+            li.style.backgroundColor = '#B3C8CF';
         }
 
         let btnCancelar = document.createElement('button');
