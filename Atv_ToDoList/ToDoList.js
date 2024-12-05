@@ -1,23 +1,21 @@
 function cancelarAtv(li) {
     li.remove();
 }
-
 function confirmarAtv(li) {
-    li.style.color = 'green';
-}
-
-function limpar() {
-    document.getElementById(inAtv).innerText = ''
+    li.style.color = '#B4B4B8';
+    li.style.backgroundColor = "white";
 }
 
 const frm = document.querySelector('form');
-
+let atv = 0
 frm.addEventListener('submit', (e) =>{
     e.preventDefault();
 
     let atividade = frm.inAtv.value;
     let prioridade = frm.inPrioridade.value;
     let ul = document.getElementById('ulLista');
+    atv++
+    let documento = "Atividade " + atv;
 
     if (atividade == '' && prioridade == '') {
         alert("Insira uma atividade e uma prioridade válida.")
@@ -28,7 +26,6 @@ frm.addEventListener('submit', (e) =>{
 
         if (prioridade.toLowerCase() == "alta") {
             li.style.backgroundColor = '#F95454';
-
         }
         else if (prioridade.toLowerCase() == 'media') {
             li.style.backgroundColor = '#FCF596';
@@ -42,7 +39,6 @@ frm.addEventListener('submit', (e) =>{
         btnCancelar.classList.add('btnCancelar');
         li.appendChild(btnCancelar);
         ul.appendChild(li);
-
         btnCancelar.addEventListener('click', (e) =>{
             e.preventDefault();
             cancelarAtv(li);
@@ -53,7 +49,6 @@ frm.addEventListener('submit', (e) =>{
         btnConfirmar.classList.add('btnConfirmar');
         li.appendChild(btnConfirmar);
         ul.appendChild(li);
-
         btnConfirmar.addEventListener('click', (e) =>{
             e.preventDefault();
             confirmarAtv(li);
@@ -62,4 +57,6 @@ frm.addEventListener('submit', (e) =>{
     }
     frm.inAtv.value = '';
     frm.inPrioridade.value = '';
+    
 })
+
